@@ -7,6 +7,17 @@ The second and third are small ones that take only take 1 second and they also u
 The requests are handled in order and in sequence while maintaining an accurate representation of the data, in the database server, on the mobile application.
 
 Front-end developed in React Native.
+Features:
+NavigationContainer
+StackNavigator
+Axios
+Custom button
+Spinner
+
+Hooks: 
+useMemo
+useReducer
+
 Back-end consists of one MySQL server (Amazon RDS for MySQL) that has one database 'Task' and one table 'Via'.
 It also consists of 3 lambda functions developed in NodeJS that use npm and mysql package for mysql queries.
 1) numberLarge: simulate a large load of 5 seconds then the server handles the request; Read the existing value from the table,
@@ -24,14 +35,3 @@ Link located in ../utils/config.json
 
 The client screen sends requests using Axios and synchronization between the server and the front-end side is handled through
 the use of states and by using async/await requests to the server.
-
-Hooks used: 
-useMemo
-useReducer
-
-Front-end:
-NavigationContainer
-StackNavigator
-Axios
-Custom button
-Spinner
