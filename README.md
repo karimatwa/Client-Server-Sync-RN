@@ -36,3 +36,5 @@ first resource '/' invokes the resetNumber method.
 second resource '/numberlarge' invokes numberLarge method.
 third resource '/numbersmall' invokes numberSmall method.
 Link located in ../utils/config.json
+
+![GitHub Logo](/Screenshot.png)
