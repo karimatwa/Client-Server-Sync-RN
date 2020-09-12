@@ -2,7 +2,7 @@
 
 The purpose of this project is keeping events on both the server and mobile side consistent and synchronized.
 
-The app from the mobile sends 3 requests; the first one is large and takes 5 seconds to process, change a value in a database server and return it in the request response.
+The app from the mobile sends 3 requests; the first one is large and takes 5 seconds to process, changes a value in a database server and returns it in the request response.
 The second and third are small ones that take only 1 second each. They also update a value in the database and return it in the request response.
 The requests are handled in order and in sequence while maintaining an accurate representation of the data, in the database server, on the mobile application.
 
