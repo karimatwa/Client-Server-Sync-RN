@@ -28,6 +28,7 @@ add 100 to it, then set the value in the database field and return it in the req
 2) numberSmall: simulate a load of 1 second then the server handles the request; Read the existing value from the table,
 add 25 to it, then set the value in the database field and return it in the request.
 3) resetNumber: Set the value in table Via to 0 and return the value in the request.
+
 Files located in ../backend.
 
 The three lambda functions are called using a REST API deployed using API Gateway under 3 resources.
