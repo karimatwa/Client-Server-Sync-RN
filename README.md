@@ -3,10 +3,13 @@
 The purpose of this project is keeping events on both the server and mobile side consistent and synchronized.
 
 The app from the mobile sends 3 requests; the first one is large and takes 5 seconds to process, change a value in a database server and return it in the request response.
-The second and third are small ones that take only take 1 second and they also update values in the database and return it in the request response.
+The second and third are small ones that take only take 1 second each. They also update values in the database and return it in the request response.
 The requests are handled in order and in sequence while maintaining an accurate representation of the data, in the database server, on the mobile application.
 
 Front-end developed in React Native.
+The client screen sends requests using Axios and synchronization between the server and the front-end side is handled through
+the use of states and by using async/await requests to the server.
+
 Features:
 NavigationContainer
 StackNavigator
@@ -32,6 +35,3 @@ first resource '/' invokes the resetNumber method.
 second resource '/numberlarge' invokes numberLarge method.
 third resource '/numbersmall' invokes numberSmall method.
 Link located in ../utils/config.json
-
-The client screen sends requests using Axios and synchronization between the server and the front-end side is handled through
-the use of states and by using async/await requests to the server.
